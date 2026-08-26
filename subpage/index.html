@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/Exhibition_section.css">
     <link rel="stylesheet" href="./css/Notice_section.css">
     <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/sub-style.css">
 </head>
 
 <body>
@@ -108,214 +109,224 @@
                         </ul>
 
                         <ul class="header-top-gnb Type-Mobile">
-                          <li><a href="#" class="top-gnb-item">로그인</a></li>
-                          <li>
-                            <div class="select-box select-box-lang">
-                              <button id="lang-btn" class="top-gnb-item select-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-list">KOR</button>
-                              <ul id="lang-list" class="select-list" role="listbox" aria-labelledby="lang-btn">
-                                <li class="select-list-opt" role="option" aria-selected="true"><span>KOR</span></li>
-                                <li class="select-list-opt" role="option" aria-selected="false"><span>ENG</span></li>
-                                <li class="select-list-opt" role="option" aria-selected="false"><span>JPN</span></li>
-                                <li class="select-list-opt" role="option" aria-selected="false"><span>CHN</span></li>
-                              </ul>
-                            </div>
-                          </li>
+                            <li><a href="#" class="top-gnb-item">로그인</a></li>
+                            <li>
+                                <div class="select-box select-box-lang">
+                                    <button id="lang-btn" class="top-gnb-item select-btn" aria-haspopup="listbox"
+                                        aria-expanded="false" aria-controls="lang-list">KOR</button>
+                                    <ul id="lang-list" class="select-list" role="listbox" aria-labelledby="lang-btn">
+                                        <li class="select-list-opt" role="option" aria-selected="true"><span>KOR</span>
+                                        </li>
+                                        <li class="select-list-opt" role="option" aria-selected="false"><span>ENG</span>
+                                        </li>
+                                        <li class="select-list-opt" role="option" aria-selected="false"><span>JPN</span>
+                                        </li>
+                                        <li class="select-list-opt" role="option" aria-selected="false"><span>CHN</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="header-right">
                     <button type="button" class="button-search Type-PC" aria-label="검색" aria-haspopup="true"></button>
                     <!-- 모바일 -->
-    <button type="button" class="button-m-menu Type-Mobile" aria-label="메뉴" aria-haspopup="true">
-        <div class="menu-item">
-            <span></span>
-            <span></span>
-            <span></span>
+                    <button type="button" class="button-m-menu Type-Mobile" aria-label="메뉴" aria-haspopup="true">
+                        <div class="menu-item">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
         </div>
-    </button>
-    </div>
-    </div>
-    </div>
     </header>
 
     <main>
-        <div class="page-header">
-            <div class="page-link">
-                <ul>
-                    <li><button type="button" aria-label="스크랩"><img src="./images/info/scrap.svg" alt=""></button></li>
-                    <li><button type="button" aria-label="인쇄"><img src="./images/info/print.svg" alt=""></button></li>
-                    <li><button type="button" aria-label="공유"><img src="./images/info/send.svg" alt=""></button></li>
-                </ul>
+        <div class="inner">
+            <div class="page-header">
+                <div class="page-link">
+                    <ul>
+                        <li><button type="button" aria-label="스크랩"><img src="./images/info/scrap.svg" alt=""></button>
+                        </li>
+                        <li><button type="button" aria-label="인쇄"><img src="./images/info/print.svg" alt=""></button>
+                        </li>
+                        <li><button type="button" aria-label="공유"><img src="./images/info/send.svg" alt=""></button>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="nav-location" aria-label="현재 위치">
+                    <ul>
+                        <li><a href="#"><img src="./images/info/home.svg" alt="메인페이지로 이동"></a></li>
+                        <li><a href="#">관람</a></li>
+                        <li><a href="#">관람 안내</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav-location" aria-label="현재 위치">
+            <div class="info-top">
+                <h2>관람 안내</h2>
+                <p>역사와 문화가 살아 숨쉬고, 과거와 현재, 미래가 공존하는 감동의 공간인
+                    <strong>국립중앙박물관</strong>에 오신 것을 환영합니다.
+                </p>
+                <img src="./images/museum.svg" alt="국립중앙박물관 전경">
+            </div>
+            <section class="content">
                 <ul>
-                    <li><a href="#"><img src="./images/info/home.svg" alt="메인페이지로 이동"></a></li>
-                    <li><a href="#">관람</a></li>
-                    <li><a href="#">관람 안내</a></li>
+                    <li>
+                        <h2>관람시간</h2>
+                        <dl>
+                            <div>
+                                <dt>월·화·목·금·일</dt>
+                                <dd>09:30 ~ 17:30</dd>
+                            </div>
+
+                            <div>
+                                <dt>수·토</dt>
+                                <dd>09:30 ~ 21:00</dd>
+                            </div>
+
+                            <div>
+                                <dt>입장 마감</dt>
+                                <dd>관람 종료 30분 전</dd>
+                            </div>
+                        </dl>
+                        <p>* 옥외 전시장: 07:00 ~ 22:00</p>
+                        <p>* 여름방학 운영시간은 별도 공지 참고</p>
+
+                    </li>
+                    <li>
+                        <h2>휴관일 및 휴실일</h2>
+                        <dl>
+                            <div>
+                                <dt>휴관일</dt>
+                                <dd>1월 1일, 설·추석 당일</dd>
+                            </div>
+
+                            <div>
+                                <dt>정기 휴실</dt>
+                                <dd>3·6·9·12월 첫째 월요일</dd>
+                            </div>
+                        </dl>
+                        <p>* 야외전시장 정상 운영</p>
+                        <p>* 세부 휴실 일정은 공지사항을 확인해 주세요.</p>
+                    </li>
+                    <li>
+                        <h2>관람료</h2>
+                        <dl>
+                            <div>
+                                <dt>무료</dt>
+                                <dd>상설전시·어린이박물관</dd>
+                            </div>
+
+                            <div>
+                                <dt>유료</dt>
+                                <dd>특별전시
+                                    (전시에 따라 상이)</dd>
+                            </div>
+
+                            <div>
+                                <dt>관람권 구매</dt>
+                                <dd>특별전시실 1 앞 매표소
+                                    특별전시실 2 입구</dd>
+                            </div>
+
+                            <div>
+                                <dt>판매시간</dt>
+                                <dd>관람 종료 30분 전</dd>
+                            </div>
+                        </dl>
+                    </li>
+                    <li>
+                        <h2>관람 문의</h2>
+                        <p>관람 및 예약 관련 문의</p>
+                        <dl>
+                            <dt>대표번호:</dt>
+                            <dd>
+                                <a href="tel:02-2077-9000">02-2077-9000
+                                </a>
+                            </dd>
+                        </dl>
+                        <p>* 학생단체 관람은 사전예약 후 이용 가능합니다.</p>
+                    </li>
                 </ul>
-            </nav>
+            </section>
+
+            <section class="note">
+                <h2>관람시 유의사항</h2>
+                <ul>
+                    <li>
+                        <h3>작품은 눈으로 감상하기</h3>
+                        <p>작품 보호를 위해 전시물에 손을 대거나 기대는 행동은 삼가 주세요.</p>
+                    </li>
+                    <li>
+                        <h3>조용한 관람하기</h3>
+                        <p>휴대전화는 무음 또는 진동으로 설정하고, 뛰거나 큰 소리로 대화하는 행동은 자제해 주세요.</p>
+                    </li>
+                    <li>
+                        <h3>촬영 규정 지키기</h3>
+                        <p>플래시, 삼각대, 셀카봉, 짐벌 사용 및 상업적 촬영은 금지됩니다. 일부 전시는 촬영이 제한될 수 있습니다.</p>
+                    </li>
+                    <li>
+                        <h3>반입 물품 안내</h3>
+                        <p>음식물 반입은 제한됩니다. 배낭 및 대형 가방은 1층 물품보관함을 이용해 주세요.</p>
+                    </li>
+                    <li>
+                        <h3>반려동물 출입 제한</h3>
+                        <p>안내견을 제외한 반려동물은 박물관 내부에 출입할 수 없습니다.</p>
+                    </li>
+                    <li>
+                        <h3>쾌적한 관람 환경</h3>
+                        <p>박물관 전 구역은 금연구역입니다. 자전거, 킥보드, 인라인, 스케이트보드 등 이동수단은 이용할 수 없습니다.</p>
+                    </li>
+                    <li>
+                        <h3>안전한 관람 복장</h3>
+                        <p>슬리퍼나 바퀴달린 신발 등 안전에 위험이 있는 복장은 입장이 제한될 수 있습니다.</p>
+                    </li>
+                    <li>
+                        <h3>보안검색 안내</h3>
+                        <p>문화유산 보호와 안전한 관람을 위해 입장 전 보안검색이 실시됩니다. 협조 부탁드립니다.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="service">
+                <h2>자주 찾는 서비스</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h3>예약</h3>
+                        </a>
+                        <p>사전예약 및 예매를 이용해 보세요.</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>전시해설</h3>
+                        </a>
+                        <p>도슨트 프로그램을 확인하세요.</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>편의시설</h3>
+                        </a>
+                        <p>편의시설 위치를 확인하세요.</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>오시는 길</h3>
+                        </a>
+                        <p>교통 및 주차 정보를 확인하세요</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>층별 안내</h3>
+                        </a>
+                        <p>전시실 위치를 확인하세요.</p>
+                    </li>
+                </ul>
+            </section>
         </div>
-        <div class="info-top">
-            <h2>관람 안내</h2>
-            <p>역사와 문화가 살아 숨쉬고, 과거와 현재, 미래가 공존하는 감동의 공간인
-                <strong>국립중앙박물관</strong>에 오신 것을 환영합니다.
-            </p>
-            <img src="./images/museum.svg" alt="국립중앙박물관 전경">
-        </div>
-        <section class="content">
-            <ul>
-                <li>
-                    <h2>관람시간</h2>
-                    <dl>
-                        <div>
-                            <dt>월·화·목·금·일</dt>
-                            <dd>09:30 ~ 17:30</dd>
-                        </div>
-
-                        <div>
-                            <dt>수·토</dt>
-                            <dd>09:30 ~ 21:00</dd>
-                        </div>
-
-                        <div>
-                            <dt>입장 마감</dt>
-                            <dd>관람 종료 30분 전</dd>
-                        </div>
-                    </dl>
-                    <p>* 옥외 전시장: 07:00 ~ 22:00</p>
-                    <p>* 여름방학 운영시간은 별도 공지 참고</p>
-
-                </li>
-                <li>
-                    <h2>휴관일 및 휴실일</h2>
-                    <dl>
-                        <div>
-                            <dt>휴관일</dt>
-                            <dd>1월 1일, 설·추석 당일</dd>
-                        </div>
-
-                        <div>
-                            <dt>정기 휴실</dt>
-                            <dd>3·6·9·12월 첫째 월요일</dd>
-                        </div>
-                    </dl>
-                    <p>* 야외전시장 정상 운영</p>
-                    <p>* 세부 휴실 일정은 공지사항을 확인해 주세요.</p>
-                </li>
-                <li>
-                    <h2>관람료</h2>
-                    <dl>
-                        <div>
-                            <dt>무료</dt>
-                            <dd>상설전시·어린이박물관</dd>
-                        </div>
-
-                        <div>
-                            <dt>유료</dt>
-                            <dd>특별전시
-                                (전시에 따라 상이)</dd>
-                        </div>
-
-                        <div>
-                            <dt>관람권 구매</dt>
-                            <dd>특별전시실 1 앞 매표소
-                                특별전시실 2 입구</dd>
-                        </div>
-
-                        <div>
-                            <dt>판매시간</dt>
-                            <dd>관람 종료 30분 전</dd>
-                        </div>
-                    </dl>
-                </li>
-                <li>
-                    <h2>관람 문의</h2>
-                    <p>관람 및 예약 관련 문의</p>
-                    <dl>
-                        <dt>대표번호:</dt>
-                        <dd>
-                            <a href="tel:02-2077-9000">02-2077-9000
-                            </a>
-                        </dd>
-                    </dl>
-                    <p>* 학생단체 관람은 사전예약 후 이용 가능합니다.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="note">
-            <h2>관람시 유의사항</h2>
-            <ul>
-                <li>
-                    <h3>작품은 눈으로 감상하기</h3>
-                    <p>작품 보호를 위해 전시물에 손을 대거나 기대는 행동은 삼가 주세요.</p>
-                </li>
-                <li>
-                    <h3>조용한 관람하기</h3>
-                    <p>휴대전화는 무음 또는 진동으로 설정하고, 뛰거나 큰 소리로 대화하는 행동은 자제해 주세요.</p>
-                </li>
-                <li>
-                    <h3>촬영 규정 지키기</h3>
-                    <p>플래시, 삼각대, 셀카봉, 짐벌 사용 및 상업적 촬영은 금지됩니다. 일부 전시는 촬영이 제한될 수 있습니다.</p>
-                </li>
-                <li>
-                    <h3>반입 물품 안내</h3>
-                    <p>음식물 반입은 제한됩니다. 배낭 및 대형 가방은 1층 물품보관함을 이용해 주세요.</p>
-                </li>
-                <li>
-                    <h3>반려동물 출입 제한</h3>
-                    <p>안내견을 제외한 반려동물은 박물관 내부에 출입할 수 없습니다.</p>
-                </li>
-                <li>
-                    <h3>쾌적한 관람 환경</h3>
-                    <p>박물관 전 구역은 금연구역입니다. 자전거, 킥보드, 인라인, 스케이트보드 등 이동수단은 이용할 수 없습니다.</p>
-                </li>
-                <li>
-                    <h3>안전한 관람 복장</h3>
-                    <p>슬리퍼나 바퀴달린 신발 등 안전에 위험이 있는 복장은 입장이 제한될 수 있습니다.</p>
-                </li>
-                <li>
-                    <h3>보안검색 안내</h3>
-                    <p>문화유산 보호와 안전한 관람을 위해 입장 전 보안검색이 실시됩니다. 협조 부탁드립니다.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="service">
-            <h2>자주 찾는 서비스</h2>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>예약</h3>
-                    </a>
-                    <p>사전예약 및 예매를 이용해 보세요.</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>전시해설</h3>
-                    </a>
-                    <p>도슨트 프로그램을 확인하세요.</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>편의시설</h3>
-                    </a>
-                    <p>편의시설 위치를 확인하세요.</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>오시는 길</h3>
-                    </a>
-                    <p>교통 및 주차 정보를 확인하세요</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>층별 안내</h3>
-                    </a>
-                    <p>전시실 위치를 확인하세요.</p>
-                </li>
-            </ul>
-        </section>
     </main>
 
     <footer class="footer">
