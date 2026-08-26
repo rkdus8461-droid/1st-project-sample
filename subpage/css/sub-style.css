@@ -1,20 +1,142 @@
-.inner{
+.inner {
     max-width: var(--inner-width);
-    background-color: rgba(255,0,0,0.1);
+    background-color: rgba(255, 0, 0, 0.1);
     margin: 0 auto;
 }
-.nav-location ul{
+
+main {
+    padding-top: 95px;
+}
+
+/* 페이지 상단 */
+.page-header {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+/* 현재 위치 */
+.nav-location ul {
     display: flex;
     align-items: center;
 }
-.nav-location li{
+
+.nav-location li {
     display: flex;
     align-items: center;
 }
-.nav-location li+li::before{
+
+.nav-location li+li::before {
     content: "";
-    width: 16px;
-    height: 16px;
-    margin: 0 12px;
-    background: url(../images/info/arrow.svg) no-repeat center;
+    width: 24px;
+    height: 24px;
+    margin: 0 3px;
+    background: url(../images/info/arrow.svg) no-repeat center / contain;
+}
+
+.nav-location img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+/* 관람안내 + 아이콘 */
+.info-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.info-title h2 {
+    margin: 0 0 30px 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.page-link ul {
+    margin: 0 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.page-link button {
+    border: 0;
+    padding: 0;
+    background: none;
+}
+
+.page-link img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+.info-top{
+    margin: 0;
+}
+
+.info-top p {
+    max-width: 980px;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.content>ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.content li {
+    padding: 0;
+}
+
+.content h2 {
+    margin: 0;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #666666;
+    font-size: 34px;
+    font-weight: 700;
+}
+.content dl{
+    margin: 15px 0 0;
+    font-size: 18px;
+    line-height: 1.1;
+}
+.content dl>div {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    column-gap: 15px;
+    margin-top: 10px;
+    align-items: start;
+}
+
+.content dt {
+    margin: 0;
+    flex-shrink: 0;
+    font-weight: 600;
+}
+.content dd{
+    margin: 0;
+}
+.content .content-label{
+    margin: 13px 0 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+}
+.content p{
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #666666;
+    line-height: 0.8;
+}
+.content div:last-child{
+    margin-bottom: 25px;
 }
