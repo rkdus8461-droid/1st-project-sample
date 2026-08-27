@@ -140,3 +140,44 @@ main {
 .content div:last-child{
     margin-bottom: 25px;
 }
+
+.note{
+    margin-top: 50px;
+}
+
+.note>h2{
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.note>ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.note li{
+    min-height: 240px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.note>ul>li:hover{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.22);
+    transform: translateY(-2px);
+}
+
+.note h3{
+    margin: 27px 0 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.note p{
+    margin: 0;
+    font-size: 16px;
+}
