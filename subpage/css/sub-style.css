@@ -1,6 +1,6 @@
 .inner {
     max-width: var(--inner-width);
-    background-color: rgba(255, 0, 0, 0.1);
+    /* background-color: rgba(255, 0, 0, 0.1); */
     margin: 0 auto;
 }
 
@@ -73,7 +73,8 @@ main {
     height: 24px;
     display: block;
 }
-.info-top{
+
+.info-top {
     margin: 0;
 }
 
@@ -83,6 +84,7 @@ main {
     margin-bottom: 30px;
 }
 
+/* 관람 정보 */
 .content {
     margin-top: 10px;
 }
@@ -104,11 +106,13 @@ main {
     font-size: 34px;
     font-weight: 700;
 }
-.content dl{
+
+.content dl {
     margin: 15px 0 0;
     font-size: 18px;
     line-height: 1.1;
 }
+
 .content dl>div {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -122,62 +126,152 @@ main {
     flex-shrink: 0;
     font-weight: 600;
 }
-.content dd{
+
+.content dd {
     margin: 0;
 }
-.content .content-label{
+
+.content .content-label {
     margin: 13px 0 0;
     font-size: 18px;
     font-weight: 600;
     color: #111;
 }
-.content p{
+
+.content p {
     margin: 10px 0 0;
     font-size: 16px;
     color: #666666;
     line-height: 0.8;
 }
-.content div:last-child{
+
+.content div:last-child {
     margin-bottom: 25px;
 }
 
-.note{
-    margin-top: 50px;
+/* 관람시 유의사항 */
+.note {
+    margin-top: 10px;
 }
 
-.note>h2{
-    margin-bottom: 30px;
+.note>h2 {
+    margin-bottom: 25px;
     font-size: 34px;
     font-weight: 700;
 }
 
-.note>ul{
+.note>ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.note li{
+.note li {
+    position: relative;
     min-height: 240px;
-    padding: 30px;
+    padding: 35px;
     background: #fff;
-    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.note>ul>li:hover{
-    box-shadow: 0 8px 20px rgba(0,0,0,0.22);
+.note>ul>li:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.27);
     transform: translateY(-2px);
 }
 
-.note h3{
+.note-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note-title h3 {
     margin: 27px 0 15px;
     font-size: 20px;
     font-weight: 700;
 }
 
-.note p{
+.note-title img {
+    width: 33px;
+    height: 33px;
+    display: block;
+}
+
+.note p {
     margin: 0;
     font-size: 16px;
+}
+
+/* 자주 찾는 서비스 */
+.service {
+    width: 100%;
+    background: #f4f4f4;
+    height: 300px;
+}
+
+.service-inner {
+    width: var(--inner-width);
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service h2 {
+    margin: 0 0 25px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.service ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.service-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.service-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.service-title h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service p{
+    font-size: 16px;
+}
+
+.arrow-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.service-title:hover {
+    border-bottom-color:#666666;
+}
+
+.service-title:hover .arrow-icon{
+    transform: translateX(5px);
 }
