@@ -40,6 +40,11 @@ main {
     display: block;
 }
 
+div>.info-top {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
 /* 관람안내 + 아이콘 */
 .info-title {
     display: flex;
@@ -74,10 +79,6 @@ main {
     display: block;
 }
 
-.info-top {
-    margin: 0;
-}
-
 .info-top p {
     max-width: 980px;
     font-size: 34px;
@@ -86,7 +87,8 @@ main {
 
 /* 관람 정보 */
 .content {
-    margin-top: 10px;
+    margin: 50px 0;
+    padding: 50px 0;
 }
 
 .content>ul {
@@ -151,7 +153,9 @@ main {
 
 /* 관람시 유의사항 */
 .note {
-    margin-top: 10px;
+    margin: 50px 0;
+    padding: 50px 0;
+
 }
 
 .note>h2 {
@@ -209,6 +213,8 @@ main {
     width: 100%;
     background: #f4f4f4;
     height: 300px;
+    margin: 50px 0;
+    padding: 50px 0
 }
 
 .service-inner {
@@ -256,7 +262,7 @@ main {
     font-weight: 700;
 }
 
-.service p{
+.service p {
     font-size: 16px;
 }
 
@@ -269,9 +275,360 @@ main {
 }
 
 .service-title:hover {
-    border-bottom-color:#666666;
+    border-bottom-color: #666666;
 }
 
-.service-title:hover .arrow-icon{
+.service-title:hover .arrow-icon {
     transform: translateX(5px);
+}
+
+/* 아이패드 */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .inner {
+        width: calc(100% - 80px);
+        max-width: none;
+    }
+
+    main {
+        padding-top: 60px;
+    }
+
+    .page-header {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .nav-location li {
+        font-size: 15px;
+    }
+
+    .nav-location li+li::before {
+        width: 20px;
+        height: 20px;
+        margin: 0 2px;
+    }
+
+    .nav-location img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .info-title h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .page-link ul {
+        margin-bottom: 35px;
+        gap: 12px;
+    }
+
+    .page-link img {
+        width: 21px;
+        height: 21px;
+        display: block;
+    }
+
+    div>.info-top {
+        margin: 0 0 35px;
+        padding: 0 0 35px;
+    }
+
+    .info-top p {
+        max-width: 750px;
+        margin-bottom: 25px;
+        font-size: 27px;
+        line-height: 1.4;
+    }
+
+    .content {
+        margin: 35px 0;
+        padding: 35px 0;
+    }
+
+    .content ul {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+
+    .content h2 {
+        font-size: 25px;
+    }
+
+    .content dl {
+        font-size: 15px;
+    }
+
+    .content dl>div {
+        grid-template-columns: 90px 1fr;
+        column-gap: 10px;
+    }
+
+    .content .content-label {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .content p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .note {
+        margin: 35px 0;
+        padding: 35px 0;
+    }
+
+    .note h2 {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .note ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .note li {
+        min-height: 190px;
+        padding: 22px;
+        border-radius: 8px;
+    }
+
+    .note-title h3 {
+        margin: 20px 0 12px;
+        font-size: 18px;
+    }
+
+    .note-title img {
+        width: 27px;
+        height: 27px;
+    }
+
+    .note p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .service {
+        height: auto;
+        margin: 35px 0;
+        padding: 35px 0;
+    }
+
+    .service-inner {
+        width: calc(100% - 80px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .service h2 {
+        margin-bottom: 10px;
+        padding-bottom: 2px;
+    }
+
+    .service ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+        row-gap: 20px;
+    }
+
+    .service-title {
+        gap: 8px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+
+    .service-icon {
+        width: 23px;
+        height: 23px;
+    }
+
+    .service-title h3 {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .arrow-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .service p {
+        font-size: 14px;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+    .inner {
+        width: calc(100% - 40px);
+    }
+
+    main {
+        padding-top: 60px;
+    }
+
+    .page-header {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .nav-location li {
+        font-size: 13px;
+    }
+
+    .nav-location li+li::before {
+        width: 18px;
+        height: 18px;
+        margin: 0 1px;
+    }
+
+    .nav-location img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .info-title h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .page-link ul {
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .page-link img {
+        width: 20px;
+        height: 20px;
+    }
+
+    div>.info-top {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .info-top p {
+        max-width: none;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        margin: 30px 0;
+        padding: 30px 0;
+    }
+
+    .content ul {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .content h2 {
+        font-size: 24px;
+        padding-bottom: 7px;
+    }
+
+    .content dl {
+        margin-top: 12px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .content dl>div {
+        grid-template-columns: 90px 1fr;
+        column-gap: 10px;
+        margin-top: 8px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .note {
+        margin: 30px 0;
+        padding: 30px 0;
+    }
+
+    .note h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .note ul {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .note li {
+        min-height: 0;
+        padding: 25px;
+    }
+
+    .note-title h3 {
+        margin: 20px 0 12px;
+        font-size: 17px;
+    }
+
+    .note-title img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .note p {
+        font-size: 14px;
+    }
+
+    .service {
+        height: auto;
+        margin: 30px 0;
+        padding: 30px 0;
+    }
+
+    .service-inner {
+        width: calc(100% - 40px);
+        height: auto;
+    }
+
+    .service h2 {
+        margin: 0 0 25px;
+        font-size: 24px;
+    }
+
+    .service ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .service-title {
+        gap: 10px;
+        margin-bottom: 5px;
+        padding-bottom: 1px;
+    }
+
+    .service-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .service-title h3 {
+        font-size: 17px;
+        white-space: nowrap;
+    }
+
+    .arrow-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .service p {
+        font-size: 14px;
+    }
 }
