@@ -114,12 +114,12 @@ main {
 }
 
 .login-box {
-    padding-right: 80px;
+    padding-right: 30px;
     text-align: center;
 }
 
 .join-box {
-    padding-left: 80px;
+    padding-left: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
