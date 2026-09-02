@@ -41,8 +41,8 @@ main {
 }
 
 div>.info-top {
-    margin-bottom: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 /* 관람안내 + 아이콘 */
@@ -87,8 +87,8 @@ div>.info-top {
 
 /* 관람 정보 */
 .content {
-    margin: 50px 0;
-    padding: 50px 0;
+    margin: 40px 0;
+    padding: 40px 0;
 }
 
 .content>ul {
@@ -153,8 +153,8 @@ div>.info-top {
 
 /* 관람시 유의사항 */
 .note {
-    margin: 50px 0;
-    padding: 50px 0;
+    margin: 40px 0;
+    padding: 40px 0;
 
 }
 
